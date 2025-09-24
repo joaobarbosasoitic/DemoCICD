@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'mcr.microsoft.com/dotnet/sdk:9.0' }
+        docker { image 'mcr.microsoft.com/dotnet/sdk:9.0-bullseye' }
     }
     environment {
         DOTNET_CLI_TELEMETRY_OPTOUT = '1'
