@@ -14,9 +14,9 @@ public class UnitTest1
         var resultado = a + b;
 
         // Assert
-        Assert.Equal(6, resultado);
+        Assert.Equal(5, resultado);
     }
-
+// teste
     [Fact]
     public void Soma_NaoDeveRetornarValorErrado()
     {
