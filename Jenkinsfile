@@ -8,7 +8,14 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/joaobarbosasoitic/DemoCICD', credentialsId: 'github-token'
+                // Limpa o workspace antes de clonar
+                deleteDir()
+                checkout([$class: 'GitSCM',
+                          branches: [[name: 'main']],
+                          userRemoteConfigs: [[
+                              url: 'https://github.com/joaobarbosasoitic/DemoCICD.git'
+                          ]]
+                ])
             }
         }
         stage('Restore') {
