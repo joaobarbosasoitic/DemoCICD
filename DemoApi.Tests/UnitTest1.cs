@@ -10,7 +10,6 @@ public class UnitTest1
         // Arrange
         var a = 2;
         var b = 3;
-
         // Act
         var resultado = a + b;
 
