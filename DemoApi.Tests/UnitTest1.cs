@@ -14,7 +14,7 @@ public class UnitTest1
         var resultado = a + b;
 
         // Assert
-        Assert.Equal(5, resultado);
+        Assert.Equal(6, resultado);
     }
 
     [Fact]
